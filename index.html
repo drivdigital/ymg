@@ -30,17 +30,17 @@
         position: absolute;
       }
 
-      /* iPhoneX */
-      @media only screen
-          and (device-width : 375px)
-          and (device-height : 812px)
-          and (orientation : portrait)
-          and (-webkit-device-pixel-ratio : 3) {
-            .desktop { display: none; }
-          }
 
       @media ( min-width: 48em ) { .mobile { display: none; } }
       @media ( max-width: 48em ) { .desktop { display: none; } }
+
+      /* iPhones? */
+      @media only screen
+        and (orientation : portrait)
+        and (-webkit-device-pixel-ratio : 3) {
+          .mobile { display: block; }
+          .desktop { display: none; }
+      }
 
     </style>
   </head>
