@@ -18,12 +18,15 @@
         object-fit: contain;
       }
       img.mobile {
-        width: auto;
-        height: 100%;
+        width: 100%;
+        height: auto;
       }
       img.desktop {
         width: 100%;
-        height: auto;
+        height: 100%;
+        object-position: center center;
+        vertical-align: middle;
+        position: absolute;
       }
       @media ( min-width: 48em ) { .mobile { display: none;} }
       @media ( max-width: 48em ) { .desktop {display: none;} }
